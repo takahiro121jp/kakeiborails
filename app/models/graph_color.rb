@@ -1,0 +1,2 @@
+class GraphColor < ApplicationRecord
+end

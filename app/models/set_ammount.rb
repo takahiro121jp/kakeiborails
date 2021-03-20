@@ -1,0 +1,2 @@
+class SetAmmount < ApplicationRecord
+end
