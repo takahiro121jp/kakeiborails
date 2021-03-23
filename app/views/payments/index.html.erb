@@ -1,21 +1,65 @@
-<h1 class="text-red">TOPページ</h1>
-<p>Find me in app/views/payments/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpotr" content="width=device-width,initial-scale=1.0.minimum-scale=1.0">
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+<!-- Bootstrap Javascript(jQuery含む) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-<div class="alert alert-primary" role="alert">
-  A simple primary alert—check it out!
-</div>
 
-<div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-  <div class="btn-group mr-2" role="group" aria-label="First group">
-    <button type="button" class="btn btn-secondary">1</button>
-    <button type="button" class="btn btn-secondary">2</button>
-    <button type="button" class="btn btn-secondary">3</button>
-    <button type="button" class="btn btn-secondary">4</button>
-  </div>
-  <div class="input-group">
-    <div class="input-group-prepend">
-      <div class="input-group-text" id="btnGroupAddon">@</div>
+    <title>TOPページ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="alert alert-primary" role="alert">
+        <h1>TOPページ</h1>
+        <a href="account.html">アカウント登録</a>
+      </div>
+      
+    </header>
+    <div class="wrapper">
+      <div class="date">
+        月日時点<br>
+        <a class="button1" href="setting.html">設定額<br>
+        50000円</a>
+      </div>
+    
+      <div class="en">
+        今月の使用料金<br>
+        <div class="graph_box">
+          <div class="graph_box_wrap white">
+            <canvas width="300" height="300" id="" class="match_graph" data-percent="35"></canvas>
+            <div class="graph_box_percent"><span></span>%</div>  
+          </div>
+        </div>
+
+        
+      </div>
+      <div class="siharaitouroku">
+        <a class="button2" href="touroku.html">支払い登録・編集</a>
+      </div>
     </div>
-    <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
-  </div>
-</div>
+    <footer>
+      <a class="button-top" href="index.html">TOP</a>
+      <a class="button-rireki" href="graph.html">支払い履歴</a>
+      <a class="button-setting" href="setting.html">設定</a>
+    </footer>
+    <script src="javascript.js"></script>
+  </body>
+
+  <script>
+ 
+    var myfunc = function () {
+      var str = ".innerHTMLで変数渡し！";
+      document.getElementById('edit_area').innerHTML = str ;
+    }
+ 
+  </script>
+
+</html>
