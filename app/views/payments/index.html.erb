@@ -19,18 +19,27 @@
     <header class="header">
       <div class="alert alert-primary" role="alert">
         <h1>TOPページ</h1>
+<<<<<<< HEAD
         <div class="account"><%= link_to 'アカウント登録', '/users/sign_up' %></div>
+=======
+        <a href="account.html">アカウント登録</a>
+>>>>>>> c026f6a9be9b8d06860a21cd7bd441b31ebda0b4
       </div>
       
     </header>
     <div class="wrapper">
       <div class="date">
         月日時点<br>
+<<<<<<< HEAD
         
           <%= link_to  '/statics/setting' do %>
             <div class="button1">設定額<br>円</div>
           <%end%>
         
+=======
+        <a class="button1" href="setting.html">設定額<br>
+        50000円</a>
+>>>>>>> c026f6a9be9b8d06860a21cd7bd441b31ebda0b4
       </div>
     
       <div class="en">
@@ -38,7 +47,11 @@
         <div class="graph_box">
           <div class="graph_box_wrap white">
             <canvas width="300" height="300" id="" class="match_graph" data-percent="35"></canvas>
+<<<<<<< HEAD
             <div class="graph_box_percent"><span></span>円</div>  
+=======
+            <div class="graph_box_percent"><span></span>%</div>  
+>>>>>>> c026f6a9be9b8d06860a21cd7bd441b31ebda0b4
           </div>
         </div>
 
@@ -49,6 +62,7 @@
       </div>
     </div>
     <footer>
+<<<<<<< HEAD
       <%= link_to  '/' do %>
         <div class="button-top">TOP</div>
       <%end%>
@@ -95,6 +109,15 @@
       cleate_graph(name,percent);
       }
   </script>
+=======
+      <a class="button-top" href="index.html">TOP</a>
+      <a class="button-rireki" href="graph.html">支払い履歴</a>
+      <a class="button-setting" href="setting.html">設定</a>
+    </footer>
+    <script src="javascript.js"></script>
+  </body>
+
+>>>>>>> c026f6a9be9b8d06860a21cd7bd441b31ebda0b4
   <script>
  
     var myfunc = function () {
